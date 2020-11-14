@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+* {
+    font-family: 'Montserrat';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+}
+
+
+/*Tete de page*/
+
+header img{
+    width: 150px;
+}
+header{
+    display: flex; /* permet aux header de tout aligner*/
+    align-items: center; /*aligner tous les elements au centre de la navbar (colonne)*/
+}
+section.top-page{
+    background: url("../images/bg.jpg");
+    background-size: cover; /*couverture arrière plan*/
+    height: 80vh;
+    padding: 25px;
+}
+
+
+
+/* menu de navigation bar*/
+
+nav.navbar{
+    display: flex; /* permet aux li d'etre alignés et plus en colonnes*/
+    list-style: none; /*enlever les puces*/
+    margin-left: 30px;
+    width: 400px;
+    justify-content: space-between;/*les deux dernières lignes permettent de faire un espace entre les rubriques*/
+}
+nav.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*landing page*/
+.landing-page{
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title{
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 200;
+    font-size: 75px;
+    width: 40%;
+    
+
+}
+.scoll-down{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* SERVICES */
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.service-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.delivery-icon{
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-details{
+    font-weight: 500;
+    width: 200px;
+    text-align: center;
+}
+
+/*BEST ITEMS*/
+
+.section-title{
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.best-items{
+    margin: 100px;
+}
+
+.best-plants{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plant-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    /*min-width: 350px;
+    height: 500px;
+    flex: 1;*/   
+}
+
+.no-grid{
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+.plant1{
+    background-image: url('../images/nos_meilleures_ventes/1.jpg');
+}
+.plant2{
+    background-image: url('../images/nos_meilleures_ventes/2.jpg');
+}
+.plant3{
+    background-image: url('../images/nos_meilleures_ventes/3.jpg');
+}
+.plant4{
+    background-image: url('../images/nos_meilleures_ventes/4.jpg');
+}
+
+.plant-details{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 50px;
+
+}
+
+.plant-name{
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+.plant-price{
+    color: #ADD981;
+    font-weight: 550;
+    font-size: 18px;
+}
+
+
+/* NOS PLANTES */
+
+.all-plants{
+    margin: 100px;
+}
+
+.plant-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+    
+}
+
+.plant-grid1{
+    background-image: url(../images/nos_plantes/1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+    margin: 10px;
+}
+.plant-grid2{
+    background-image: url(../images/nos_plantes/2.jpg);
+    grid-column: 3/5;
+    margin: 10px;
+}
+.plant-grid3{
+    background-image: url(../images/nos_plantes/3.jpg);
+    grid-column: 3/5;
+    margin: 10px;
+}
+.plant-grid4{
+    background-image: url(../images/nos_plantes/4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+    margin: 10px;
+}
+.plant-grid5{
+    background-image: url(../images/nos_plantes/5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+    margin: 10px;
+}
+.plant-grid6{
+    background-image: url(../images/nos_plantes/6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+    margin: 10px;
+}
+
+
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
